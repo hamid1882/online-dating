@@ -88,3 +88,34 @@
         margin-top: 0.6em;
     }
 }
+.input-text{
+    height: 50px;
+    width: 100%;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 1px 1px  #888888 1px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 20px;
+  
+    box-shadow: 3px 3px 3px #888888 ;
+}
+.login-button{
+    float: right;
+    height: 55px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 8px;
+    color: #000;
+   
+    font-size: 36px;
+    font-weight: 600px;
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #888888 ;
+}
+.login-button:hover{
+    background-color: red;
+    border: none;
+}

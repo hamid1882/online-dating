@@ -4,9 +4,11 @@ function LoginForm() {
   return (
     <div>
       <h1>Login Form</h1>
-      <input type="text" />
-      <input type="password" />
-      <button>Login</button>
+      <input className="input-text" type="text"  required placeholder="user@gamil.com"/>
+      <br/>
+      <input className="input-text"  type="password" required placeholder="user@gamil123456" />
+      <br/>
+      <button  className="login-button">Login</button>
     </div>
   );
 }
