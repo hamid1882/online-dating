@@ -18,7 +18,6 @@
 /* loginpage css */
 
 .Login-page {
-    height: 70%;
     display: flex;
     justify-content: center;
     margin-top: 5em;
@@ -41,7 +40,7 @@
 
 .button {
     width: 100%;
-    padding: 1em;
+    padding: 1.5em;
     border: 1px solid gray;
     background-color: transparent;
     border: none;
@@ -60,6 +59,78 @@
     background-color: #f4b0b0;
 }
 
+.form-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    gap: 2em;
+    padding: 1em 2em;
+}
+
+label {
+    color: gray;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 1em 0em;
+}
+
+.input {
+    height: 50px;
+    width: 100%;
+    border-radius: 0.5em;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    border: 1px solid gray;
+    /* box-shadow: 3px 3px 3px #888888; */
+}
+
+.input:focus {
+    border: 1px solid gray;
+    outline: none;
+}
+
+.input:active {
+    border: 1px solid gray;
+    outline: none;
+}
+
+.Button-box {
+    display: flex;
+    justify-content: end;
+}
+
+.login-button {
+    border-radius: 0.4em;
+    padding: 14px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700px;
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+    border: 1px solid gray;
+    letter-spacing: 0.1em;
+    /* box-shadow: 3px 3px 3px #888888; */
+}
+
+.login-button:hover {
+    background-color: #f4b0b0;
+    border: none;
+}
+
+@media (min-width: 601px) {
+    .Login-page {
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 600px) {
+    .Login-page {
+        margin-top: 0.6em;
+    }
+}
+
 @media (max-width: 600px) {
     .App-header {
         justify-content: center;
@@ -75,16 +146,10 @@
         width: 100%;
         margin: 0 1em;
     }
-}
-
-@media (min-width: 601px) {
-    .Login-page {
-        margin-top: 1em;
+    .form-box {
+        padding: 0.5em 1em;
     }
-}
-
-@media (max-width: 600px) {
-    .Login-page {
-        margin-top: 0.6em;
+    .input {
+        font-size: 20px;
     }
 }
