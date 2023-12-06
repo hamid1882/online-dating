@@ -2,13 +2,28 @@ import React from "react";
 
 function LoginForm() {
   return (
-    <div>
-      <h1>Login Form</h1>
-      <input className="input-text" type="text"  required placeholder="user@gamil.com"/>
-      <br/>
-      <input className="input-text"  type="password" required placeholder="user@gamil123456" />
-      <br/>
-      <button  className="login-button">Login</button>
+    <div className="form-box">
+      <div>
+        <label htmlFor="email">Email/Username</label>
+        <input
+          placeholder="user@gmail.com"
+          className="input"
+          type="text"
+          required
+        />
+      </div>
+      <div>
+        <label htmlFor="Password">Password</label>
+        <input
+          placeholder="User@password123"
+          className="input"
+          type="password"
+          required
+        />
+      </div>
+      <div className="Button-box">
+        <button className="login-button">Login</button>
+      </div>
     </div>
   );
 }
