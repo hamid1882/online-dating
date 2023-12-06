@@ -1,38 +1,90 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    height: 100vh;
+    transition: all ease-in 0.5s;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.App-logo {
+    height: 5em;
+    width: 5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* loginpage css */
+
+.Login-page {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.Login-box {
+    width: 30%;
+    background-color: rgb(255, 236, 230);
+    box-shadow: 2px 2px 10px #888888;
+    border-radius: 0.7em;
+}
+
+.Login-Tabs-Box {
+    display: flex;
+    width: 100%;
+    border-top-right-radius: 0.7em;
+    border-top-left-radius: 0.7em;
+    border-bottom: 1px solid gray;
+}
+
+.button {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid gray;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.Login-Tab {
+    border-top-left-radius: 0.7em;
+}
+
+.Signup-Tab {
+    border-top-right-radius: 0.7em;
+}
+
+.Selected {
+    background-color: #f4b0b0;
+}
+
+@media (max-width: 600px) {
+    .App-header {
+        justify-content: center;
+    }
+    .App-logo {
+        height: 2.5em;
+        width: 2.5em;
+    }
+    .Login-page {
+        margin-top: 2em;
+    }
+    .Login-box {
+        width: 100%;
+        margin: 0 1em;
+    }
+}
+
+@media (min-width: 601px) {
+    .Login-page {
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 600px) {
+    .Login-page {
+        margin-top: 0.6em;
+    }
 }
