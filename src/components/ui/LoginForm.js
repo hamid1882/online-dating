@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function LoginForm() {
   return (
@@ -22,7 +23,9 @@ function LoginForm() {
         />
       </div>
       <div className="Button-box">
-        <button className="login-button">Login</button>
+        <Link to="/profile">
+          <button className="login-button">Login</button>
+        </Link>
       </div>
     </div>
   );
