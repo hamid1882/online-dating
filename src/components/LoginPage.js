@@ -12,6 +12,7 @@ function LoginPage() {
         <LoginTabs selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
         {selectedTab === "login" ? <LoginForm /> : <SignupForm />}
       </div>
+  
     </div>
   );
 }
