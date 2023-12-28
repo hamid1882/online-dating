@@ -1,17 +1,27 @@
 .App {
     height: 100vh;
     transition: all ease-in 0.5s;
+    
 }
 
 .App-header {
     display: flex;
     align-items: center;
     gap: 1em;
+    justify-content: space-between;
+    padding-right:10px;
+    
+
 }
 
 .App-logo {
     height: 5em;
     width: 5em;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }
 
 
@@ -118,6 +128,8 @@ label {
     background-color: #f4b0b0;
     border: none;
 }
+/* profile page */
+
 
 @media (min-width: 601px) {
     .Login-page {

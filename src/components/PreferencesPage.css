@@ -1,0 +1,56 @@
+.Preference-con{
+    height: auto;
+    justify-content: center;
+    display: flex;
+    margin-top: 5em;
+    padding: 10px;
+
+
+    
+}
+.preference-box{
+   width: 50%;
+   /* border: red; */
+   /* border: 1px solid red; */
+   background-color: antiquewhite;
+   box-shadow: 2px 2px 10px #888888;
+      height: 70%;
+     
+      
+
+
+}
+.per-head{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+margin-bottom: 10px;
+}
+.pre-button{
+    width: 100%;
+    padding: 1em;
+    border: 1px solid gray;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+}
+.pre-buttons{
+    display: flex;
+    margin-bottom: 10px;
+
+}
+.submit{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+.pre-buttons{
+   flex-direction: column;
+   gap: 2em;
+}
+.pre-button{
+    font-size: 16px;
+}
+    
+}
